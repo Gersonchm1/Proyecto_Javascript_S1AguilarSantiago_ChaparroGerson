@@ -1,5 +1,5 @@
 const url = "https://6818a2da5a4b07b9d1d017b1.mockapi.io/Description"
-const autos = document.querySelector(".autos")
+
 let resultados = ''
 
 
@@ -50,3 +50,12 @@ fetch(url)
     .then(res => res.json())
     .then(data => mostrar(data))
     .catch(err => console.error("Error al obtener datos:", err))
+
+
+
+
+
+
+
+
+
