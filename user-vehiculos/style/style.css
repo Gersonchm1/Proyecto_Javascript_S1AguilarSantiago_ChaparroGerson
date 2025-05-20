@@ -24,16 +24,6 @@ body {
 }
 
 
-
-
-
-
-
-
-
-
-
-
 .fondo3 {
  background: rgba(0, 0, 0, 0.4);
  min-height: 100vh;
@@ -221,7 +211,6 @@ h1, h2 {
 
 
 
-
 .price {
  position: absolute;
  bottom: 20px;
@@ -229,9 +218,6 @@ h1, h2 {
  font-size: 28px;
  opacity: 0.7;
 }
-
-
-
 
 
 
@@ -254,8 +240,6 @@ h1, h2 {
  box-shadow: 0 0 25px rgba(0, 255, 247, 0.8);
  transform: scale(1.1);
 }
-
-
 
 
 
