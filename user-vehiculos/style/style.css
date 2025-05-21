@@ -273,7 +273,7 @@ h1, h2 {
 
 
 .card:hover ~ .img-container img {
- transform: scale(0.7) translateX(40%) translateY(-140%) rotateZ(2deg);
+ transform: scale(0.7) translateX(10%) translateY(-30%) rotateZ(2deg);
  filter: drop-shadow(0 0 30px #ff00e5);
 }
 .button {

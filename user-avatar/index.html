@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
     <link rel="stylesheet" href="./css/style2.css" />
+  
    
 </head>
  
@@ -23,14 +24,60 @@
   
     </div>  
     <button class="button">Inicio</button>
+    
+      <button class="button" id="btnCrear" >Crear</button>
+      <button class="button" >Editar</button>
+      <button class="button" >Eliminar</button>
 
+      <div id="modalArticulo" class="modal fade"  tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header bg-primary text-white">
+              <h5 class="modal-title" id="exampleModalLabel">New message</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              <form>
+                <div class="mb-3">
+                  <label for="Name" class="col-form-label">Nombre:</label>
+                  <input id="Name" type="text" class="form-control" autofocus> 
+                </div>
+                <div class="mb-3">
+                  <label for="equipo" class="col-form-label">Equipo:</label>
+                  <input id="equipo" type="number" class="form-control" autofocus> 
+                </div>
+                <div class="mb-3">
+                  <label for="rol" class="col-form-label">Rol:</label>
+                  <input id="rol" type="text" class="form-control" autofocus> 
+                </div>
+                  <div class="mb-3">
+                      <label for="imga" class="col-form-label">Foto(url):</label>
+                      <input id="imga" type="text" class="form-control" autofocus>
+              
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+              <button type="submit" class="btn btn-primary">Guardar</button>
+            </div>
+          </form>
+          </div>
+        </div>
+      </div>
+      
+      
+    
+    
+    
+    
 
     
    
    
 
 
-    <script src="./js/script.js"></script>
+    
 </body>
+<script src="./js/Mostrar.js"></script>
+
 </html>
 

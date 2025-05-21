@@ -299,7 +299,7 @@ h1, h2 {
   --main-bg-color: rgba(116, 37, 37, 0.36);
   --pattern-color: rgba(46, 213, 116, 0.073);
   margin: -72vw 0vw 0vw 0vw;
-  position: fixed;
+  
 
   /* change this rotation value */
   filter: hue-rotate(0deg);
@@ -349,6 +349,38 @@ h1, h2 {
   flex: 1 1 calc(25% - 2vw); /* 4 tarjetas por fila con espacio */
   max-width: calc(25% - 2vw);
 }
+.acciones {
+  position: fixed;
+  top: 2vw;
+  left: 2vw;
+  display: flex;
+  gap: 1rem;
+  z-index: 10;
+
+}
+#modalArticulo {
+  display: none;
+  /* Estilos para que se vea modal encima */
+  position: fixed;
+  top: 0; left: 0;
+  width: 100vw; height: 100vh;
+  background: rgba(0,0,0,0.5);
+  z-index: 999;
+  /* centra contenido */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#modalArticulo .modal-dialog {
+  background: #222;
+  border-radius: 8px;
+  padding: 1rem;
+  max-width: 400px;
+  width: 90%;
+  box-shadow: 0 0 10px #00fff7;
+}
+
 
 
 

@@ -118,9 +118,9 @@ body {
 
 h1, h2 {
  text-shadow:
-   0 0 5px #00fff7,
-   0 0 10px #00fff7,
-   0 0 20px #6c00ff,
+   0 0 5px #000000,
+   0 0 10px #1c9667,
+   0 0 20px #091396,
    0 0 30px #6c00ff;
  animation: pulseGlow 3s infinite;
 }
@@ -191,7 +191,7 @@ h1, h2 {
 
 
 .front {
- transform: rotateY(0deg) translateZ(160px);
+ transform: rotateY(5deg) translateZ(160px);
  background: linear-gradient(180deg, #00fff7 0%, rgba(0,0,0,0) 100%);
 }
 
@@ -293,7 +293,7 @@ h1, h2 {
 }
 
 .card:hover ~ .img-container img {
- transform: scale(0.7) translateX(90%) translateY(-120%) rotateZ(30deg);
+ transform: scale(0.7) translateX(90%) translateY(-100%) rotateZ(30deg);
  filter: drop-shadow(0 0 30px #ff00e5);
 }
 .button {
