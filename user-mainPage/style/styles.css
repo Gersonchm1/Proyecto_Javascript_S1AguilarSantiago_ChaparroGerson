@@ -119,3 +119,9 @@ button{
   transition: transform 0.3s ease-in-out;
   cursor: pointer;
 }
+
+.disabled-link button {
+    opacity: 0.5;
+    pointer-events: none;
+    cursor: not-allowed;
+}

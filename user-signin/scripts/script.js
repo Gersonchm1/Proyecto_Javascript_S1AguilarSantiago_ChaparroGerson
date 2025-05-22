@@ -1,7 +1,7 @@
 document.getElementById('login').addEventListener('click', verificacion);
 
 async function cambiarpg() {
-    window.location.replace('../user-mainPage/index.html');
+    window.location.replace('../../user-mainPage/index.html');
 }
 
 async function verificacion() {
