@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="../vehiculos-admin/style/style.css" />
+   
+</head>
+ 
+
+
+<body >
+   
+    <div class="fondo3"></div>
+    <div class="fondo2" id="fondo2">
+        
+              
+    </div>
+    <div class="fondo5" id="fondo5"></div>
+    <div class="juan" id="juan">
+  
+    </div>  
+     <button class="button">Inicio</button>
+    
+      <button class="button1" id="btnCrear" >Crear</button>
+      <button class="button2" >Editar</button>
+      <button class="button3" >Eliminar</button>
+      <div id="modalArticulo">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5>Nuevo Vehiculo</h5>
+        <button id="btnCerrarModal" class="btn-close">X</button>
+      </div>
+      <div class="modal-body">
+        <form id="formArticulo">
+          <div class="mb-3">
+            <label for="equipo">Equipo:</label>
+            <input id="equipo" type="text" class="form-control" required>
+          </div>
+          <div class="mb-3">
+            <label for="modelo">Modelo:</label>
+            <input id="modelo" type="number" class="form-control" required>
+          </div>
+          <div class="mb-3">
+            <label for="motor">Motor:</label>
+            <input id="motor" type="text" class="form-control" required>
+          </div>
+          <div class="mb-3">
+            <label for="velocidadMax">velocidadMax:</label>
+            <input id="velocidadMax" type="text" class="form-control" required>
+          </div>
+          <div class="mb-3">
+            <label for="aceleracion">aceleracion:</label>
+            <input id="aceleracion" type="text" class="form-control" required>
+          </div>
+          <div class="mb-3">
+            <label for="velocidadPromedio">Velocidad Promedio:</label>
+            <input id="velocidadPromedio" type="text" class="form-control" required>
+          </div>
+          <div class="mb-3">
+            <label for="img">Foto (URL):</label>
+            <input id="img" type="text" class="form-control" required>
+          </div>
+          <div class="modal-footer">
+            <button type="button" id="btnCerrarModal2" class="btn btn-secondary">Cerrar</button>
+            <button type="submit" class="btn btn-primary">Guardar</button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+    
+   
+   
+
+
+   
+</body>
+ <script src="./js/crear.js"></script>
+ <script src="./js/Mostrar.js"></script>
+
+</html>
+
+

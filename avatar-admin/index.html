@@ -1,0 +1,88 @@
+
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/style2.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500;700&display=swap" rel="stylesheet" />
+  
+   
+</head>
+ 
+
+<body>
+
+    <div class="fondo3"></div>
+    <div class="fondo2" id="fondo2">
+        
+              
+    </div>
+    <div class="fondo5" id="fondo5"></div>
+    <div class="juan" id="juan">
+  
+    </div>  
+    <button class="button">Inicio</button>
+    
+      <button class="button1" id="btnCrear" >Crear</button>
+      <button class="button2" >Editar</button>
+      <button class="button3" >Eliminar</button>
+
+      <!-- Botones -->
+
+<!-- Modal personalizado sin Bootstrap -->
+<div id="modalArticulo">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5>Nuevo Avatar</h5>
+        <button id="btnCerrarModal" class="btn-close">X</button>
+      </div>
+      <div class="modal-body">
+        <form id="formArticulo">
+          <div class="mb-3">
+            <label for="Name">Nombre:</label>
+            <input id="Name" type="text" class="form-control" required>
+          </div>
+          <div class="mb-3">
+            <label for="equipo">Equipo:</label>
+            <input id="equipo" type="number" class="form-control" required>
+          </div>
+          <div class="mb-3">
+            <label for="rol">Rol:</label>
+            <input id="rol" type="text" class="form-control" required>
+          </div>
+          <div class="mb-3">
+            <label for="imga">Foto (URL):</label>
+            <input id="imga" type="text" class="form-control" required>
+          </div>
+          <div class="modal-footer">
+            <button type="button" id="btnCerrarModal2" class="btn btn-secondary">Cerrar</button>
+            <button type="submit" class="btn btn-primary">Guardar</button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
+
+      
+      
+    
+    
+    
+    
+
+    
+   
+   
+
+
+    
+</body>
+<script src="./js/crear.js"></script>
+<script src="./js/Mostrar.js"></script>
+
+</html>
+
