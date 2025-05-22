@@ -25,6 +25,7 @@ const mostrar = (articulos) => {
                         <li>Equipo: ${articulo.equipo}</li>
                         
                         
+                        
                        
                     </ul>
                     <button>Seleccionar</button>

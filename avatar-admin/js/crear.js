@@ -11,10 +11,8 @@ const btnCerrar = modal.querySelector('.btn-close');
 
 let resultados = '';
 
-// Función para mostrar artículos (suponiendo que la tienes)
+
 const mostrar = (articulos) => {
-  // Tu código para mostrar los datos en la UI
-  // Por ejemplo:
   resultados = '';
   articulos.forEach(articulo => {
     resultados += `
@@ -25,13 +23,22 @@ const mostrar = (articulos) => {
             <p class="price">${articulo.equipo}</p>
           </div>
           <div class="rigth box">
-            <h2>Detalle</h2>
+            <h2>Detalle</h2>  x
+            
             <ul>
               <li>Rol: ${articulo.rol}</li>
               <li>Equipo: ${articulo.equipo}</li>
+               <button class="btn-eliminar-avatar" data-id="${articulo.id}">-</button>
+               <button class="button1" id="btnCrear" >Crear</button>
             </ul>
+            
             <button>Seleccionar</button>
+            
+             
+       
+            
           </div>
+          
         </section>
         <section class="img-container">
           <img src="${articulo.imga}" alt="${articulo.Name}" />
@@ -59,6 +66,74 @@ window.addEventListener('click', e => {
     modal.style.display = 'none';
   }
 });
+
+const fondo5Container = document.querySelector('.fondo5'); 
+
+fondo5Container.addEventListener('click', (e) => {
+  if (e.target.classList.contains('btn-eliminar-avatar')) {
+    const avatarId = e.target.dataset.id;
+    
+    alertify.confirm('Confirmar Eliminación', `¿Estás seguro de que quieres eliminar este avatar?`, 
+      function(){
+        eliminarAvatar(avatarId);
+      }, 
+      function(){ 
+        alertify.error('Eliminación cancelada');
+      }
+    ).set('labels', {ok:'Sí, Eliminar', cancel:'Cancelar'});
+  }
+});
+
+
+const eliminarAvatar = (id) => {
+  fetch(`${url}/${id}`, {
+    method: 'DELETE'
+  })
+  .then(res => {
+    if (!res.ok) {
+    
+      return res.json().then(error => { throw new Error(error.message || 'Error al eliminar') });
+    }
+    return res.json(); 
+  })
+  .then(data => {
+    console.log('Avatar eliminado:', data);
+    alertify.success('Avatar eliminado correctamente!');
+    
+   
+    fetch(url)
+      .then(res => res.json())
+      .then(data => mostrar(data))
+      .catch(err => console.error('Error al re-obtener datos:', err));
+  })
+  .catch(err => {
+    console.error('Error al eliminar avatar:', err);
+    alertify.error(`Error al eliminar: ${err.message}`);
+  });
+};
+
+
+fetch(url)
+  .then(res => res.json())
+  .then(data => mostrar(data))
+  .catch(err => console.error('Error al obtener datos:', err));
+
+
+const btnCerrarModal2 = document.getElementById('btnCerrarModal2');
+if (btnCerrarModal2) {
+    btnCerrarModal2.addEventListener('click', () => {
+        modal.style.display = 'none';
+    });
+}
+
+
+const btnCerrarModalHeader = document.getElementById('btnCerrarModal');
+if(btnCerrarModalHeader) {
+    btnCerrarModalHeader.addEventListener('click', () => {
+        modal.style.display = 'none';
+    });
+}
+
 
 
 
