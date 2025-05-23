@@ -17,37 +17,37 @@
 }
 
 .container--subcontainer {
-  position: relative;
-  height: 90%;
-  width: 90%;
-  border: 3px solid #003CFF;
-  overflow: hidden;
-  border-radius: 1%;
-  display: flex;
+    position: relative;
+    height: 90%;
+    width: 90%;
+    border: 3px solid #003CFF;
+    overflow: hidden;
+    border-radius: 1%;
+    display: flex;
 }
 
 
 .container--subcontainer::before {
-  content: '';
-  position: absolute;
-  inset: 0;
-  background-color: #003CFF;
-  opacity: 0.3;
-  filter: blur(3px);
-  z-index: 0;
-  border-radius: 1%;
+    content: '';
+    position: absolute;
+    inset: 0;
+    background-color: #003CFF;
+    opacity: 0.3;
+    filter: blur(3px);
+    z-index: 0;
+    border-radius: 1%;
 }
 
 
-.container--subcontainer > * {
-  position: relative;
-  z-index: 1;
+.container--subcontainer>* {
+    position: relative;
+    z-index: 1;
 }
 
 .container--escuderias,
 .container--vehiculos,
 .container--pilotos,
-.container--circuitos{
+.container--circuitos {
     height: 92%;
     width: 20%;
     margin: 2% 3%;
@@ -94,13 +94,13 @@
 .container--escuderias__titulo,
 .container--vehiculos__titulo,
 .container--pilotos__titulo,
-.container--circuitos__titulo{
+.container--circuitos__titulo {
     height: 10%;
     width: 100%;
     align-items: center;
 }
 
-button{
+button {
     background-color: #003CFF;
     color: white;
     text-align: center;
@@ -108,20 +108,68 @@ button{
     padding: 3% 3%;
     height: auto;
     width: 100%;
-    
+
 }
 
 .container--escuderias__img:hover,
 .container--vehiculos__img:hover,
 .container--pilotos__img:hover,
 .container--circuitos__img:hover {
-  transform: scale(1.05);
-  transition: transform 0.3s ease-in-out;
-  cursor: pointer;
+    transform: scale(1.05);
+    transition: transform 0.3s ease-in-out;
+    cursor: pointer;
 }
 
 .disabled-link button {
     opacity: 0.5;
     pointer-events: none;
     cursor: not-allowed;
+}
+
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+        gap: 20px;
+        padding: 20px;
+        overflow: auto;
+    }
+
+    .container--subcontainer {
+        flex-direction: column;
+        width: 95%;
+        height: auto;
+        border-radius: 10px;
+        margin: 20px 0;
+    }
+
+    .container--escuderias,
+    .container--vehiculos,
+    .container--pilotos,
+    .container--circuitos {
+        width: 90%;
+        height: auto;
+        margin: 10px auto;
+    }
+
+    .container--escuderias__img,
+    .container--vehiculos__img,
+    .container--pilotos__img,
+    .container--circuitos__img {
+        height: 200px;
+        margin-bottom: 10px;
+    }
+
+    .container--escuderias__titulo,
+    .container--vehiculos__titulo,
+    .container--pilotos__titulo,
+    .container--circuitos__titulo {
+        height: auto;
+        font-size: 18px;
+        margin-bottom: 10px;
+    }
+
+    button {
+        font-size: 16px;
+        padding: 12px;
+    }
 }

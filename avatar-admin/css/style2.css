@@ -1,26 +1,25 @@
-
 @import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;600;800&display=swap');
 
 
 
 
 * {
- margin: 0;
- padding: 0;
- box-sizing: border-box;
- font-family: "Orbitron", sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Orbitron", sans-serif;
 }
 
 
 
 
 body {
- background: url('../Frame\ 17.svg');
- color: #00fff7;
- overflow-x: hidden;
- overflow-y: hidden;
- position: relative;
- min-height: 100vh;
+  background: url('../Frame17.svg');
+  color: #00fff7;
+  overflow-x: hidden;
+  overflow-y: hidden;
+  position: relative;
+  min-height: 100vh;
 }
 
 
@@ -35,11 +34,11 @@ body {
 
 
 .fondo3 {
- background: rgba(0, 0, 0, 0.4);
- min-height: 100vh;
- position: fixed;
- width: 120%;
- z-index: -2;
+  background: rgba(0, 0, 0, 0.4);
+  min-height: 100vh;
+  position: fixed;
+  width: 120%;
+  z-index: -2;
 }
 
 
@@ -47,7 +46,7 @@ body {
 
 .fondo2 {
   background: linear-gradient(145deg, rgba(0, 255, 255, 0.15), rgba(0, 0, 0, 0.7)),
-              repeating-linear-gradient(45deg, rgba(0, 255, 247, 0.05) 0px, rgba(0, 255, 247, 0.05) 2px, transparent 2px, transparent 6px);
+    repeating-linear-gradient(45deg, rgba(0, 255, 247, 0.05) 0px, rgba(0, 255, 247, 0.05) 2px, transparent 2px, transparent 6px);
   border: 2px solid rgba(0, 255, 247, 0.8);
   border-radius: 2vw;
   position: fixed;
@@ -70,16 +69,19 @@ body {
 
 
 @keyframes neonPulse {
- 0%, 100% {
-   box-shadow:
-     0 0 15px rgba(40, 148, 13, 0.6),
-     inset 0 0 30px rgba(13, 123, 143, 0.9);
- }
- 50% {
-   box-shadow:
-     0 0 30px rgba(160, 2, 199, 0.9),
-     inset 0 0 60px rgba(255, 50, 50, 1);
- }
+
+  0%,
+  100% {
+    box-shadow:
+      0 0 15px rgba(40, 148, 13, 0.6),
+      inset 0 0 30px rgba(13, 123, 143, 0.9);
+  }
+
+  50% {
+    box-shadow:
+      0 0 30px rgba(160, 2, 199, 0.9),
+      inset 0 0 60px rgba(255, 50, 50, 1);
+  }
 }
 
 
@@ -87,7 +89,7 @@ body {
 
 .fondo5 {
   background: linear-gradient(120deg, rgba(36, 106, 153, 0.9), rgba(18, 24, 45, 0.95)),
-              radial-gradient(circle at top right, rgba(0, 255, 247, 0.1), transparent 50%);
+    radial-gradient(circle at top right, rgba(0, 255, 247, 0.1), transparent 50%);
   border: 2px solid rgba(0, 255, 247, 0.3);
   border-radius: 2vw;
   backdrop-filter: blur(15px);
@@ -117,13 +119,14 @@ body {
 
 
 
-h1, h2 {
- text-shadow:
-   0 0 5px #00fff7,
-   0 0 10px #00fff7,
-   0 0 20px #6c00ff,
-   0 0 30px #6c00ff;
- animation: pulseGlow 3s infinite;
+h1,
+h2 {
+  text-shadow:
+    0 0 5px #00fff7,
+    0 0 10px #00fff7,
+    0 0 20px #6c00ff,
+    0 0 30px #6c00ff;
+  animation: pulseGlow 3s infinite;
 }
 
 
@@ -132,46 +135,46 @@ h1, h2 {
 
 
 .container {
- width: 280px;
- height: 380px;
- background: rgba(0, 255, 247, 0.1);
- border-radius: 20px;
- border: 2px solid #00fff7;
- box-shadow:
-   0 0 10px #00fff7,
-   0 0 20px #6c00ff,
-   0 0 30px #00fff7;
- backdrop-filter: blur(10px);
- transition: box-shadow 0.3s ease;
- cursor: pointer;
- perspective: 800px;
- position: relative;
+  width: 280px;
+  height: 380px;
+  background: rgba(0, 255, 247, 0.1);
+  border-radius: 20px;
+  border: 2px solid #00fff7;
+  box-shadow:
+    0 0 10px #00fff7,
+    0 0 20px #6c00ff,
+    0 0 30px #00fff7;
+  backdrop-filter: blur(10px);
+  transition: box-shadow 0.3s ease;
+  cursor: pointer;
+  perspective: 800px;
+  position: relative;
 }
 
 
 
 
 .container:hover {
- box-shadow:
-   0 0 20px #00fff7,
-   0 0 40px #6c00ff,
-   0 0 60px #00fff7;
+  box-shadow:
+    0 0 20px #00fff7,
+    0 0 40px #6c00ff,
+    0 0 60px #00fff7;
 }
 
 
 
 
 .card {
- width: 100%;
- height: 100%;
- transform-style: preserve-3d;
- transition: transform 0.6s ease-in-out;
- transform: translateZ(-140px);
- border-radius: 20px;
- background: linear-gradient(135deg, rgba(0,255,247,0.1), rgba(108,0,255,0.1));
- border: 1px solid rgba(0, 255, 247, 0.3);
- box-shadow: 0 0 20px rgba(0, 255, 247, 0.2);
- position: relative;
+  width: 100%;
+  height: 100%;
+  transform-style: preserve-3d;
+  transition: transform 0.6s ease-in-out;
+  transform: translateZ(-140px);
+  border-radius: 20px;
+  background: linear-gradient(135deg, rgba(0, 255, 247, 0.1), rgba(108, 0, 255, 0.1));
+  border: 1px solid rgba(0, 255, 247, 0.3);
+  box-shadow: 0 0 20px rgba(0, 255, 247, 0.2);
+  position: relative;
 }
 
 
@@ -179,55 +182,57 @@ h1, h2 {
 
 .front,
 .rigth {
- position: absolute;
- width: 100%;
- height: 100%;
- padding: 30px;
- box-sizing: border-box;
- backface-visibility: visible;
- border-radius: 20px;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  padding: 30px;
+  box-sizing: border-box;
+  backface-visibility: visible;
+  border-radius: 20px;
 }
 
 
 
 
 .front {
- transform: rotateY(0deg) translateZ(160px);
- background: linear-gradient(180deg, #00fff7 0%, rgba(0,0,0,0) 100%);
+  transform: rotateY(0deg) translateZ(160px);
+  background: linear-gradient(180deg, #00fff7 0%, rgba(0, 0, 0, 0) 100%);
 }
 
 
 
 
 .rigth {
- transform: rotateY(90deg) translateZ(160px);
- background: linear-gradient(0deg, #6c00ff 0%, rgba(0,0,0,0) 100%);
- opacity: 0;
- transition: opacity 0.5s;
+  transform: rotateY(90deg) translateZ(160px);
+  background: linear-gradient(0deg, #6c00ff 0%, rgba(0, 0, 0, 0) 100%);
+  opacity: 0;
+  transition: opacity 0.5s;
 }
 
 
 
 
 .card:hover {
- transform: translateZ(-160px) rotateY(-90deg);
+  transform: translateZ(-160px) rotateY(-90deg);
 }
+
 .card:hover .front {
- opacity: 0;
+  opacity: 0;
 }
+
 .card:hover .rigth {
- opacity: 1;
+  opacity: 1;
 }
 
 
 
 
 .price {
- position: absolute;
- bottom: 20px;
- left: 20px;
- font-size: 28px;
- opacity: 0.7;
+  position: absolute;
+  bottom: 20px;
+  left: 20px;
+  font-size: 28px;
+  opacity: 0.7;
 }
 
 
@@ -236,23 +241,24 @@ h1, h2 {
 
 
 .rigth button {
- position: absolute;
- right: 20px;
- bottom: 20px;
- background: linear-gradient(90deg, #6c00ff, #00fff7);
- color: white;
- border: none;
- padding: 10px 20px;
- border-radius: 30px;
- font-weight: 700;
- text-transform: uppercase;
- cursor: pointer;
- box-shadow: 0 0 15px rgba(108, 0, 255, 0.5);
- transition: all 0.3s ease-in-out;
+  position: absolute;
+  right: 20px;
+  bottom: 20px;
+  background: linear-gradient(90deg, #6c00ff, #00fff7);
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 30px;
+  font-weight: 700;
+  text-transform: uppercase;
+  cursor: pointer;
+  box-shadow: 0 0 15px rgba(108, 0, 255, 0.5);
+  transition: all 0.3s ease-in-out;
 }
+
 .rigth button:hover {
- box-shadow: 0 0 25px rgba(0, 255, 247, 0.8);
- transform: scale(1.1);
+  box-shadow: 0 0 25px rgba(0, 255, 247, 0.8);
+  transform: scale(1.1);
 }
 
 
@@ -261,8 +267,8 @@ h1, h2 {
 
 
 .img-container {
-  width: 300px; 
-  height: 250px; 
+  width: 300px;
+  height: 250px;
   position: absolute;
   top: 0;
   right: 0;
@@ -278,9 +284,11 @@ h1, h2 {
 
 .img-container img {
   width: auto;
-  height: 250px; /* altura uniforme */
+  height: 250px;
+  /* altura uniforme */
   max-width: 100%;
-  object-fit: contain; /* mantiene proporciones sin deformar */
+  object-fit: contain;
+  /* mantiene proporciones sin deformar */
   object-position: center;
   transform: translateX(5%) translateY(-20%) rotateZ(0deg) skewX(5deg);
   transition: transform 0.3s ease-in-out;
@@ -288,10 +296,11 @@ h1, h2 {
 }
 
 
-.card:hover ~ .img-container img {
- transform: scale(0.7) translateX(90%) translateY(-120%) rotateZ(30deg);
- filter: drop-shadow(0 0 30px #ff00e5);
+.card:hover~.img-container img {
+  transform: scale(0.7) translateX(90%) translateY(-120%) rotateZ(30deg);
+  filter: drop-shadow(0 0 30px #ff00e5);
 }
+
 .button {
   /* in scss with just one variable i can change opacity with rgba(variable, opacity) but in css it's not possible so i have used three seperate variables */
   /* with hue-rotate color can be changed */
@@ -300,20 +309,18 @@ h1, h2 {
   --pattern-color: rgba(46, 213, 116, 0.073);
   margin: -52vw 0vw 0vw 0vw;
   position: fixed;
-  
+
 
   /* change this rotation value */
   filter: hue-rotate(0deg);
-  
+
 
   cursor: pointer;
   text-transform: uppercase;
   letter-spacing: 0.5rem;
-  background: radial-gradient(
-      circle,
+  background: radial-gradient(circle,
       var(--main-bg-color) 0%,
-      rgba(0, 0, 0, 0) 100%
-    ),
+      rgba(0, 0, 0, 0) 100%),
     linear-gradient(var(--pattern-color) 1px, transparent 1px),
     linear-gradient(to right, var(--pattern-color) 1px, transparent 1px);
   background-size:
@@ -324,12 +331,9 @@ h1, h2 {
     center center,
     center center,
     center center;
-  border-image: radial-gradient(
-      circle,
+  border-image: radial-gradient(circle,
       var(--main-color) 0%,
-      rgba(121, 44, 44, 0) 100%
-    )
-    1;
+      rgba(121, 44, 44, 0) 100%) 1;
   border-width: 1px 0 1px 0;
   color: var(--main-color);
   padding: 1rem 3rem;
@@ -337,8 +341,10 @@ h1, h2 {
   font-size: 1.5rem;
   transition: background-size 0.2s ease-in-out;
 }
+
 .button1 {
-  background: #ff4d4d; /* Un color rojo para eliminar */
+  background: #ff4d4d;
+  /* Un color rojo para eliminar */
   position: fixed;
   color: white;
   border: none;
@@ -349,17 +355,22 @@ h1, h2 {
   cursor: pointer;
   box-shadow: 0 0 10px rgba(255, 77, 77, 0.5);
   transition: all 0.3s ease-in-out;
-  margin-top: px; /* Para separarlo un poco si hay otros botones */
+  margin-top: px;
+  /* Para separarlo un poco si hay otros botones */
   /* Posicionarlo si es necesario, similar al botón 'Seleccionar' */
-  display: block; /* Opcional: para que ocupe su propia línea si quieres */
-  margin-left: auto; /* Opcional: para alinearlo a la derecha si es block */
-  margin-right: auto; /* Opcional: para centrarlo si es block */
+  display: block;
+  /* Opcional: para que ocupe su propia línea si quieres */
+  margin-left: auto;
+  /* Opcional: para alinearlo a la derecha si es block */
+  margin-right: auto;
+  /* Opcional: para centrarlo si es block */
   z-index: 999;
   position: fixed;
   display: flex;
 
   margin: 1000% 0% 0% 0%;
 }
+
 .button2 {
   /* in scss with just one variable i can change opacity with rgba(variable, opacity) but in css it's not possible so i have used three seperate variables */
   /* with hue-rotate color can be changed */
@@ -368,20 +379,18 @@ h1, h2 {
   --pattern-color: rgba(46, 213, 116, 0.073);
   margin: -49vw 0vw 0vw 44vw;
   position: fixed;
-  
+
 
   /* change this rotation value */
   filter: hue-rotate(0deg);
-  
+
 
   cursor: pointer;
   text-transform: uppercase;
   letter-spacing: 0.5rem;
-  background: radial-gradient(
-      circle,
+  background: radial-gradient(circle,
       var(--main-bg-color) 0%,
-      rgba(0, 0, 0, 0) 100%
-    ),
+      rgba(0, 0, 0, 0) 100%),
     linear-gradient(var(--pattern-color) 1px, transparent 1px),
     linear-gradient(to right, var(--pattern-color) 1px, transparent 1px);
   background-size:
@@ -392,12 +401,9 @@ h1, h2 {
     center center,
     center center,
     center center;
-  border-image: radial-gradient(
-      circle,
+  border-image: radial-gradient(circle,
       var(--main-color) 0%,
-      rgba(121, 44, 44, 0) 100%
-    )
-    1;
+      rgba(121, 44, 44, 0) 100%) 1;
   border-width: 1px 0 1px 0;
   color: var(--main-color);
   padding: 1rem 3rem;
@@ -405,6 +411,7 @@ h1, h2 {
   font-size: 1.5rem;
   transition: background-size 0.2s ease-in-out;
 }
+
 .btnBorrar {
   /* in scss with just one variable i can change opacity with rgba(variable, opacity) but in css it's not possible so i have used three seperate variables */
   /* with hue-rotate color can be changed */
@@ -413,20 +420,18 @@ h1, h2 {
   --pattern-color: rgba(46, 213, 116, 0.073);
   margin: -49vw 0vw 0vw 69vw;
   position: fixed;
-  
+
 
   /* change this rotation value */
   filter: hue-rotate(0deg);
-  
+
 
   cursor: pointer;
   text-transform: uppercase;
   letter-spacing: 0.5rem;
-  background: radial-gradient(
-      circle,
+  background: radial-gradient(circle,
       var(--main-bg-color) 0%,
-      rgba(0, 0, 0, 0) 100%
-    ),
+      rgba(0, 0, 0, 0) 100%),
     linear-gradient(var(--pattern-color) 1px, transparent 1px),
     linear-gradient(to right, var(--pattern-color) 1px, transparent 1px);
   background-size:
@@ -437,12 +442,9 @@ h1, h2 {
     center center,
     center center,
     center center;
-  border-image: radial-gradient(
-      circle,
+  border-image: radial-gradient(circle,
       var(--main-color) 0%,
-      rgba(121, 44, 44, 0) 100%
-    )
-    1;
+      rgba(121, 44, 44, 0) 100%) 1;
   border-width: 1px 0 1px 0;
   color: var(--main-color);
   padding: 1rem 3rem;
@@ -460,13 +462,17 @@ h1, h2 {
     10px 10px,
     10px 10px;
 }
+
 .button:active {
   filter: hue-rotate(250deg);
 }
+
 .container {
-  flex: 1 1 calc(25% - 2vw); /* 4 tarjetas por fila con espacio */
+  flex: 1 1 calc(25% - 2vw);
+  /* 4 tarjetas por fila con espacio */
   max-width: calc(25% - 2vw);
 }
+
 .acciones {
   position: fixed;
   top: 2vw;
@@ -476,19 +482,22 @@ h1, h2 {
   z-index: 10;
 
 }
+
 #modalArticulo {
   display: none;
   position: fixed;
-  top: 0; left: 0;
-  width: 100vw; height: 100vh;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
   background: rgba(20, 20, 20, 0.85);
   z-index: 999;
-  
+
   align-items: center;
   justify-content: center;
   backdrop-filter: blur(8px);
   transition: opacity 0.3s ease;
-  
+
 }
 
 #modalArticulo.active {
@@ -588,9 +597,10 @@ label {
 }
 
 .btn-primary {
-  background: #556b2f; /* verde oliva oscuro */
+  background: #556b2f;
+  /* verde oliva oscuro */
   color: #eee;
-  box-shadow: 0 4px 8px rgba(85,107,47,0.6);
+  box-shadow: 0 4px 8px rgba(85, 107, 47, 0.6);
 }
 
 .btn-primary:hover {
@@ -614,17 +624,21 @@ label {
     padding: 1.5rem;
     max-width: 90vw;
   }
+
   .modal-header h5 {
     font-size: 1.4rem;
   }
+
   .btn {
     padding: 0.4rem 1rem;
     font-size: 0.9rem;
   }
 }
+
 /* In your style2.css */
 .rigth .btn-eliminar-avatar {
-  background: #ff4d4d; /* Un color rojo para eliminar */
+  background: #ff4d4d;
+  /* Un color rojo para eliminar */
   position: fixed;
   color: white;
   border: none;
@@ -635,11 +649,15 @@ label {
   cursor: pointer;
   box-shadow: 0 0 10px rgba(255, 77, 77, 0.5);
   transition: all 0.3s ease-in-out;
-  margin-top: px; /* Para separarlo un poco si hay otros botones */
+  margin-top: px;
+  /* Para separarlo un poco si hay otros botones */
   /* Posicionarlo si es necesario, similar al botón 'Seleccionar' */
-  display: block; /* Opcional: para que ocupe su propia línea si quieres */
-  margin-left: auto; /* Opcional: para alinearlo a la derecha si es block */
-  margin-right: auto; /* Opcional: para centrarlo si es block */
+  display: block;
+  /* Opcional: para que ocupe su propia línea si quieres */
+  margin-left: auto;
+  /* Opcional: para alinearlo a la derecha si es block */
+  margin-right: auto;
+  /* Opcional: para centrarlo si es block */
   z-index: 999;
   position: relative;
   display: flex;
@@ -655,11 +673,65 @@ label {
 
 /* Ensure buttons in .rigth are spaced if multiple */
 .rigth button {
-  margin-bottom: 5px; /* Add some space below each button */
+  margin-bottom: 5px;
+  /* Add some space below each button */
 }
+
 .rigth button:last-child {
-  margin-bottom: 0; /* No margin for the last button */
+  margin-bottom: 0;
+  /* No margin for the last button */
 }
 
+@media (max-width: 768px) {
+  .fondo2 {
+    width: 90%;
+    left: 5%;
+    padding: 8vw;
+  }
 
+  .fondo5 {
+    width: 90%;
+    height: auto;
+    padding: 4vw;
+    margin-top: 25vw;
+    flex-direction: column;
+    align-items: center;
+  }
 
+  .container {
+    width: 90%;
+    height: auto;
+    margin-bottom: 4vw;
+  }
+
+  .img-container {
+    width: 90%;
+    height: auto;
+    top: auto;
+    right: auto;
+    position: static;
+    margin: 6vw auto;
+  }
+
+  .img-container img {
+    width: 100%;
+    height: auto;
+    transform: none;
+  }
+
+  .button,
+  .button1,
+  .button2 {
+    font-size: 1rem;
+    padding: 0.8rem 2rem;
+    margin: 5vw auto;
+    position: static;
+    display: block;
+  }
+
+  h1,
+  h2 {
+    font-size: 1.5rem;
+    text-align: center;
+  }
+}
