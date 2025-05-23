@@ -36,7 +36,7 @@ Advertencia: Este sistema de autenticación es solo para pruebas. No incluye seg
 
 O mediante el despliegue de la página en 
 [GitHub](https://github.com/Gersonchm1/Proyecto_Javascript_S1AguilarSantiago_ChaparroGerson)
-
+[Figma](https://www.figma.com/design/AJXTqViX5rzcmN6V42Stws/Untitled?node-id=0-1&t=Ra5C76k6QA4EVKts-1)
 ## 🧑‍💻 Autores
 Santiago Aguilar Vesga 
 
