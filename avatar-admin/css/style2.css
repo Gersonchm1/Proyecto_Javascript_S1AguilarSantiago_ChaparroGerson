@@ -343,32 +343,45 @@ h2 {
 }
 
 .button1 {
-  background: #ff4d4d;
-  /* Un color rojo para eliminar */
+    /* in scss with just one variable i can change opacity with rgba(variable, opacity) but in css it's not possible so i have used three seperate variables */
+  /* with hue-rotate color can be changed */
+  --main-color: rgb(54, 170, 216);
+  --main-bg-color: rgba(116, 37, 37, 0.36);
+  --pattern-color: rgba(46, 213, 116, 0.073);
+  margin: -49vw 0vw 0vw 74vw;
   position: fixed;
-  color: white;
-  border: none;
-  padding: 8px 15px;
-  border-radius: 20px;
-  font-weight: 600;
-  text-transform: uppercase;
-  cursor: pointer;
-  box-shadow: 0 0 10px rgba(255, 77, 77, 0.5);
-  transition: all 0.3s ease-in-out;
-  margin-top: px;
-  /* Para separarlo un poco si hay otros botones */
-  /* Posicionarlo si es necesario, similar al botón 'Seleccionar' */
-  display: block;
-  /* Opcional: para que ocupe su propia línea si quieres */
-  margin-left: auto;
-  /* Opcional: para alinearlo a la derecha si es block */
-  margin-right: auto;
-  /* Opcional: para centrarlo si es block */
-  z-index: 999;
-  position: fixed;
-  display: flex;
 
-  margin: 1000% 0% 0% 0%;
+
+  /* change this rotation value */
+  filter: hue-rotate(0deg);
+
+
+  cursor: pointer;
+  text-transform: uppercase;
+  letter-spacing: 0.5rem;
+  background: radial-gradient(circle,
+      var(--main-bg-color) 0%,
+      rgba(0, 0, 0, 0) 100%),
+    linear-gradient(var(--pattern-color) 1px, transparent 1px),
+    linear-gradient(to right, var(--pattern-color) 1px, transparent 1px);
+  background-size:
+    cover,
+    15px 15px,
+    15px 15px;
+  background-position:
+    center center,
+    center center,
+    center center;
+  border-image: radial-gradient(circle,
+      var(--main-color) 0%,
+      rgba(121, 44, 44, 0) 100%) 1;
+  border-width: 1px 0 1px 0;
+  color: var(--main-color);
+  padding: 1rem 3rem;
+  font-weight: 700;
+  font-size: 1.5rem;
+  transition: background-size 0.2s ease-in-out;
+
 }
 
 .button2 {
@@ -377,7 +390,7 @@ h2 {
   --main-color: rgb(54, 170, 216);
   --main-bg-color: rgba(116, 37, 37, 0.36);
   --pattern-color: rgba(46, 213, 116, 0.073);
-  margin: -49vw 0vw 0vw 44vw;
+  margin: -49vw 0vw 0vw 40vw;
   position: fixed;
 
 

@@ -29,7 +29,7 @@ const mostrar = (articulos) => {
               <li>Rol: ${articulo.rol}</li>
               <li>Equipo: ${articulo.equipo}</li>
                <button class="btn-eliminar-avatar" data-id="${articulo.id}">-</button>
-               <button class="button1" id="btnCrear" >Crear</button>
+               
             </ul>
             
             <button>Seleccionar</button>

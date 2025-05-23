@@ -373,7 +373,7 @@ h2 {
   --main-color: rgb(54, 170, 216);
   --main-bg-color: rgba(116, 37, 37, 0.36);
   --pattern-color: rgba(46, 213, 116, 0.073);
-  margin: -49vw 0vw 0vw 44vw;
+  margin: -49vw 0vw 0vw 70vw;
   position: fixed;
 
 
@@ -475,7 +475,7 @@ h2 {
   height: 100vh;
   background: rgba(20, 20, 20, 0.85);
   z-index: 999;
-  display: flex;
+ 
   align-items: center;
   justify-content: center;
   backdrop-filter: blur(8px);
@@ -685,3 +685,49 @@ label {
     text-align: center;
   }
 }
+.rigth .btn-eliminar-avatar {
+  background: #ff4d4d;
+  /* Un color rojo para eliminar */
+  position: fixed;
+  color: white;
+  border: none;
+  padding: 8px 15px;
+  border-radius: 20px;
+  font-weight: 600;
+  text-transform: uppercase;
+  cursor: pointer;
+  box-shadow: 0 0 10px rgba(255, 77, 77, 0.5);
+  transition: all 0.3s ease-in-out;
+  margin-top: px;
+  /* Para separarlo un poco si hay otros botones */
+  /* Posicionarlo si es necesario, similar al botón 'Seleccionar' */
+  display: block;
+  /* Opcional: para que ocupe su propia línea si quieres */
+  margin-left: auto;
+  /* Opcional: para alinearlo a la derecha si es block */
+  margin-right: auto;
+  /* Opcional: para centrarlo si es block */
+  z-index: 999;
+  position: relative;
+  display: flex;
+  margin: 20% 0% 0% 0%;
+}
+
+
+.rigth .btn-eliminar-avatar:hover {
+  background: #cc0000;
+  box-shadow: 0 0 20px rgba(255, 0, 0, 0.8);
+  transform: scale(1.05);
+}
+
+/* Ensure buttons in .rigth are spaced if multiple */
+.rigth button {
+  margin-bottom: 5px;
+  /* Add some space below each button */
+}
+
+.rigth button:last-child {
+  margin-bottom: 0;
+  /* No margin for the last button */
+}
+
